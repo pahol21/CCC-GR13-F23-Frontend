@@ -9,6 +9,7 @@ function App() {
   };
 
   const { data, error, isLoading } = useQuery(`${process.env.REACT_APP_API_URL}/menu`, fetchMenu);
+  const imageBucketUrl = process.env.IMAGE_BUCKET_URL;
 
   const orderMutation = useMutation((order) =>
     axios.post(`${process.env.REACT_APP_API_URL}/order`, order)
@@ -35,6 +36,7 @@ function App() {
         <div className="two-x-one-grid">
           <div className="item-header">{food.name} - {food.price}</div>
           <button className="purchase-item-button" onClick={() => handlePlaceOrder(food)}>Add to cart</button>
+          <image className="item-image" src={`${imageBucketUrl}/${food.name}`} alt="food" />
         </div>
       ))}
       <h3 className="footer">Provided with generosity by Goblin Corp™</h3>
