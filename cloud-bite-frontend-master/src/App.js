@@ -4,11 +4,8 @@ import axios from "axios";
 
 
 function App() {
-  const imageBucketUrl = process.env.IMAGE_BUCKET_URL;
+  const imageBucketUrl = "https://storage.googleapis.com/cloud-frontend-images-bucket";
   const backendUrl = process.env.REACT_APP_API_URL;
-
-  console.log("imageBucketUrl: ", imageBucketUrl);
-  console.log("backendUrl: ", backendUrl);
 
   const fetchMenu = async () => {
     return await axios.get(`${backendUrl}/menu`).then((response) => response.data);
