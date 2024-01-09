@@ -46,6 +46,13 @@
   margin-top: 0.625rem; /* Adds space between the container and footer */
 }
 
+.item-image {
+  width: 100%; /* Sets the width of the image */
+  border-radius: 0.3125rem; /* Rounds the corners */
+  image-rendering: -webkit-optimize-contrast; /* Improves image quality */
+  object-fit: cover;
+}
+
 .container h1 {
   text-align: center; /* Centers the title */
   color: #333; /* Sets the color of the title */
