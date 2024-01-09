@@ -96,13 +96,17 @@
   background-color: #fff; /* Sets a background color for list items */
   border: 1px solid #ddd; /* Adds a border */
   border-radius: 0.3125rem; /* Rounds the corners */
+  height: 40%; /* Sets the height of the container */
   z-index: 1;
 }
 
 .item-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-size: 1.25rem; /* Adjusts the font size */
   margin: 0; /* Removes default margin */
-  margin-top: -30%;
+  margin-top: -20%;
+  padding: 1rem;
   z-index: 2;
   background-color: #ffffff57;
 }
