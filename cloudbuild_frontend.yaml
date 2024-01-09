@@ -7,7 +7,7 @@ steps:
       - '-c'
       - |
         terraform init
-        echo "REACT_APP_API_URL=$(terraform output -raw nestjs_service_url)" > .env.production
+        echo "REACT_APP_API_URL=$(terraform output -raw nestjs_service_url)\n" >> .env.production
 
   # Step to get backend URL from Terraform output
   - name: 'hashicorp/terraform:latest'
@@ -17,7 +17,7 @@ steps:
       - '-c'
       - |
         terraform init
-        echo "IMAGE_BUCKET_URL=$(terraform output -raw frontend_images_bucket_url)" >> .env.production
+        echo "IMAGE_BUCKET_URL=$(terraform output -raw frontend_images_bucket_url)\n" >> .env.production
 
   # Step 1: Install dependencies
   - name: 'gcr.io/cloud-builders/npm'

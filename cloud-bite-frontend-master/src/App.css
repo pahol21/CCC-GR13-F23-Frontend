@@ -70,8 +70,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 105vh;
-  width: 105vw;
+  height: 105%;
+  width: 105%;
   position: fixed;
   top: 0;
   left: 0;
