@@ -38,7 +38,6 @@
 }
 
 .footer {
-  position: absolute; /* Sets the position to fixed */
   bottom: 0; /* Sets the bottom edge of the element to the bottom of the parent element */
   text-align: center; /* Centers the text */
   padding: 0.625rem; /* Adds padding */
