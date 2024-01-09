@@ -35,14 +35,14 @@ function App() {
 
   return (
     <div className="container">
-      <image className="background-image" src="https://rentspace.dk/wp-content/uploads/Restaurant-Herkomst1-Rentspace-JPEG.jpeg" alt="restourant" /> 
+      <img className="background-image" src="https://rentspace.dk/wp-content/uploads/Restaurant-Herkomst1-Rentspace-JPEG.jpeg" alt="restourant" /> 
       <h1>Menu</h1>
       <div className="vert-scroll">
       {data.map((food) => (
         <div className="two-x-one-grid">
           <div className="item-header">{food.name} - {food.price},-</div>
           <button className="purchase-item-button" onClick={() => handlePlaceOrder(food)}>Add to cart</button>
-          <image className="item-image" src={`${imageBucketUrl}/${food.name}.png`} alt={food.name} />
+          <img className="item-image" src={`${imageBucketUrl}/${food.name}.png`} alt={food.name + " image"} />
         </div>
       ))}
       <h4 className="footer">Provided with generosity by Goblin Corp™</h4>
