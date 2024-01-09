@@ -37,7 +37,7 @@ function App() {
           <button className="purchase-item-button" onClick={() => handlePlaceOrder(food)}>Add to cart</button>
         </div>
       ))}
-      <h3>Provided with generosity by Goblin Corp.</h3>
+      <h3>Provided with generosity by Goblin Corp™</h3>
       </div>
     </div>
   );
