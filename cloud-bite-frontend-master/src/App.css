@@ -42,6 +42,7 @@
   bottom: 0; /* Sets the bottom edge of the element to the bottom of the parent element */
   text-align: center; /* Centers the text */
   padding: 0.625rem; /* Adds padding */
+  color: white;
   border-radius: 0.3125rem; /* Rounds the corners */
   margin-top: 0.625rem; /* Adds space between the container and footer */
 }
@@ -57,6 +58,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  color: white;
   padding: 0.625rem; /* Adds padding */
 }
 
@@ -87,7 +89,7 @@
 
 .two-x-one-grid {
   display: grid; /* Sets the display type to grid */
-  grid-template-columns: .9fr .1fr; /* Creates two columns */
+  grid-template-columns: .8fr .2fr; /* Creates two columns */
   grid-gap: 0.625rem; /* Adds space between columns */
   align-items: center; /* Aligns items vertically */
   padding: 0.625rem; /* Adds padding to each list item */

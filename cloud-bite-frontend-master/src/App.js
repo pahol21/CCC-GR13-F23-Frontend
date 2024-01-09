@@ -38,9 +38,11 @@ function App() {
       <div className="vert-scroll">
       {data.map((food) => (
         <div className="two-x-one-grid">
-          <div className="item-header">{food.name} - {food.price},-</div>
-          <button className="purchase-item-button" onClick={() => handlePlaceOrder(food)}>Add to cart</button>
           <img className="item-image" src={`${imageBucketUrl}/${food.name}.png`} alt={food.name + " image"} />
+          <div className="item-header">
+            <p className="item-name">{food.name} - {food.price},-</p>
+            <button className="purchase-item-button" onClick={() => handlePlaceOrder(food)}>Add to cart</button>
+          </div>
         </div>
       ))}
       <h4 className="footer">Provided with generosity by Goblin Corp™</h4>
