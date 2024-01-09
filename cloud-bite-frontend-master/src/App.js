@@ -46,7 +46,6 @@ function App() {
         </div>
       ))}
       <h4 className="footer">Provided with generosity by Goblin Corp™</h4>
-      
       </div>
     </div>
   );

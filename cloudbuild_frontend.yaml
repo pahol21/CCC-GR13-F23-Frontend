@@ -36,3 +36,8 @@ steps:
     id: gsutil-deploy
     args: ['-m', 'cp', '-r', './build/*', 'gs://cloud-frontend-bucket/']
     dir: 'cloud-bite-frontend-master'
+
+      # Cache invalidation step
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: invalidate-cache 
+    args: ['compute', 'url-maps', 'invalidate-cdn-cache', 'frontend-url-map', '--path', '/*']
