@@ -1,7 +1,7 @@
 steps:
   # Step to get backend URL from Terraform output
   - name: 'hashicorp/terraform:latest'
-    id: 'create-env-file'
+    id: 'load backend url into .env.production'
     entrypoint: 'sh'
     args:
       - '-c'
@@ -11,7 +11,7 @@ steps:
 
   # Step to get backend URL from Terraform output
   - name: 'hashicorp/terraform:latest'
-    id: 'create-env-file'
+    id: 'load image bucket url into .env.production'
     entrypoint: 'sh'
     args:
       - '-c'
