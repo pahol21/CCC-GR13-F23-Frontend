@@ -37,6 +37,15 @@
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
+.footer {
+  position: fixed; /* Sets the position to fixed */
+  bottom: 0; /* Sets the bottom edge of the element to the bottom of the parent element */
+  text-align: center; /* Centers the text */
+  padding: 0.625rem; /* Adds padding */
+  border-radius: 0.3125rem; /* Rounds the corners */
+  margin-top: 0.625rem; /* Adds space between the container and footer */
+}
+
 .container h1 {
   text-align: center; /* Centers the title */
   color: #333; /* Sets the color of the title */
