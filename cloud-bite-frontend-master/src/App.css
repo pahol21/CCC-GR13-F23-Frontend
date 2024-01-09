@@ -53,6 +53,13 @@
   object-fit: cover;
 }
 
+.header{
+  display: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem; /* Adds padding */
+}
+
 .container h1 {
   text-align: center; /* Centers the title */
   color: #333; /* Sets the color of the title */

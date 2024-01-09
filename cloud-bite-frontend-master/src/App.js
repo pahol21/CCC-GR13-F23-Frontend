@@ -45,7 +45,8 @@ function App() {
           <image className="item-image" src={`${imageBucketUrl}/${food.name}.png`} alt={food.name} />
         </div>
       ))}
-      <h3 className="footer">Provided with generosity by Goblin Corp™</h3>
+      <h4 className="footer">Provided with generosity by Goblin Corp™</h4>
+      <h4 className="header">1.0.1-alpha</h4>
       </div>
     </div>
   );
