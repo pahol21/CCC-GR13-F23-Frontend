@@ -88,7 +88,7 @@
 
 .two-x-one-grid {
   display: grid; /* Sets the display type to grid */
-  grid-template-columns: .8fr .2fr; /* Creates two columns */
+  grid-template-rows: .8fr .2fr; /* Creates two columns */
   grid-gap: 0.625rem; /* Adds space between columns */
   align-items: center; /* Aligns items vertically */
   padding: 0.625rem; /* Adds padding to each list item */
@@ -96,11 +96,15 @@
   background-color: #fff; /* Sets a background color for list items */
   border: 1px solid #ddd; /* Adds a border */
   border-radius: 0.3125rem; /* Rounds the corners */
+  z-index: 1;
 }
 
 .item-header {
   font-size: 1.25rem; /* Adjusts the font size */
   margin: 0; /* Removes default margin */
+  margin-top: -30%;
+  z-index: 2;
+  background-color: #ffffff57;
 }
 
 .purchase-item-button {
