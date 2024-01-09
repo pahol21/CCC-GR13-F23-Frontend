@@ -35,6 +35,7 @@ function App() {
 
   return (
     <div className="container">
+      <h4 className="header">1.0.1-alpha</h4>
       <img className="background-image" src="https://rentspace.dk/wp-content/uploads/Restaurant-Herkomst1-Rentspace-JPEG.jpeg" alt="restourant" /> 
       <h1>Menu</h1>
       <div className="vert-scroll">
@@ -46,7 +47,7 @@ function App() {
         </div>
       ))}
       <h4 className="footer">Provided with generosity by Goblin Corp™</h4>
-      <h4 className="header">1.0.1-alpha</h4>
+      
       </div>
     </div>
   );
