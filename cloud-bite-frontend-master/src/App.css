@@ -47,7 +47,6 @@
 }
 
 .item-image {
-  width: 100%; /* Sets the width of the image */
   border-radius: 0.3125rem; /* Rounds the corners */
   image-rendering: -webkit-optimize-contrast; /* Improves image quality */
   object-fit: cover;
@@ -84,6 +83,7 @@
 .vert-scroll {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0.625rem; /* Adds space between columns */
   max-height: 100%; /* Adjusts the height of the container */
   overflow-y: auto; /* Adds vertical scroll functionality */
 }
