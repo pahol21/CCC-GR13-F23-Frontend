@@ -82,6 +82,8 @@
 }
 
 .vert-scroll {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-height: 100%; /* Adjusts the height of the container */
   overflow-y: auto; /* Adds vertical scroll functionality */
 }
